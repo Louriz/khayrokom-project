@@ -1,0 +1,180 @@
+<!--
+  Generated template for the SendPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>SendPage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form>
+
+  <ion-list>
+
+    <div class = "row">
+     <!-- <div class = "col">
+    <ion-item>
+      <ion-input placeholder="Username" type="text"></ion-input>
+    </ion-item>
+      </div> -->
+      <div class = "col">
+        <ion-item>
+          <ion-input placeholder="Prénom" type="text"></ion-input>
+        </ion-item>
+      </div>
+      <div class = "col">
+        <ion-item>
+          <ion-input placeholder='Nom' type="text"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col">
+    <ion-item>
+      <ion-input placeholder="Phone Number"  type="number"  ></ion-input>
+    </ion-item>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col">
+
+        <ion-item>
+          <ion-label fixed>Your position</ion-label>
+        </ion-item>
+      </div>
+    <div class = "col">
+
+      <!-- <ion-item>
+               <ion-input placeholder="Long" type="number"  ></ion-input>
+      </ion-item>
+      -->
+   </div>
+
+      <div class = "col">
+        <ion-item>
+         <div (click)="clickposition()" >  <img src="assets/imgs/geolocalisation.png"/> </div>
+        </ion-item>
+      </div>
+
+      <div class = "col">
+        <!--   <ion-item>
+            <ion-input placeholder="Lat" type="number"  ></ion-input>
+        </ion-item>
+        -->
+      </div>
+
+    </div>
+
+
+
+    <div class = "row">
+      <div class = "col">
+
+        <ion-item>
+          <ion-label fixed>Client position</ion-label>
+        </ion-item>
+      </div>
+      <div class = "col">
+
+        <ion-item>
+          <ion-input placeholder="Long" type="number"  ></ion-input>
+        </ion-item>
+      </div>
+      <div class = "col">
+        <ion-item>
+          <ion-input placeholder="Lat" type="number"  ></ion-input>
+        </ion-item>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col">
+    <ion-item>
+      <ion-textarea placeholder="Description" rows="2"></ion-textarea>
+    </ion-item>
+      </div>
+    </div>
+
+   <!-- <ion-item> -->
+
+    <div class = "row">
+      <div class = "col">
+      <ul class = "list">
+        <li class = "item item-checkbox  checkbox-assertive">
+          <label class = "checkbox">
+            <input type = "checkbox" />
+
+          <img  src="assets/imgs/booms.ico">
+          </label>
+
+        </li>
+      </ul>
+      </div>
+
+      <div class = "col">
+          <ul class = "list">
+            <li class = "item item-checkbox  checkbox-assertive">
+              <label class = "checkbox">
+                <input type = "checkbox" />
+
+                <img  src="assets/imgs/acides.ico">
+              </label>
+
+            </li>
+          </ul>
+      </div>
+
+    </div>
+      <div class = "row">
+        <div class = "col">
+          <ul class = "list">
+            <li class = "item item-checkbox  checkbox-assertive">
+              <label class = "checkbox">
+                <input type = "checkbox" />
+
+                <img src="assets/imgs/flammables.ico">
+              </label>
+
+            </li>
+          </ul>
+        </div>
+
+        <div class = "col">
+          <ul class = "list">
+            <li class = "item item-checkbox  checkbox-assertive">
+              <label class = "checkbox">
+                <input type = "checkbox" />
+
+                <img src="assets/imgs/poisons.ico">
+
+              </label>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+   <!-- </ion-item> -->
+
+    <div class = "row">
+      <div class = "col">
+      </div>
+      <div class = "col">
+    <button (click)="goTowrandom()" type = "submit" ion-button round>Submit</button>
+        </div>
+      <div class = "col">
+      </div>
+      <div class = "col">
+      <button ion-button round type="reset">Reset</button>
+      </div>
+      <div class = "col">
+      </div>
+      </div>
+  </ion-list>
+  </form>
+</ion-content>

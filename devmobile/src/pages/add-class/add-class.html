@@ -1,0 +1,54 @@
+<!--
+  Generated template for the AddClassPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add Class</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div padding align ="left"> <button  (click)="goBack()" clear=true >
+    	<img style="width:20% ; height:2% " src="assets/imgs/goback2.png">
+    </button></div>
+	<div padding align="center"> <img src="assets/imgs/logo5ayrokem.png"/> </div>
+
+
+
+
+
+	<form>
+  <div class = "row" padding-top>
+    <ion-item>
+      <ion-input placeholder="Class name" type="text" name="ClassName" [(ngModel)]="ClassName"></ion-input>
+    </ion-item>
+  </div>
+ 
+
+
+  
+
+<!--
+  Les deux buttons suivant font la même choses, mais nous préférons garder celui avec l'icon. Autre chose voir le type='submit' est ce que c'est indispensable ou non ? 
+-->
+
+
+  <div class = "row">
+    <div align="center" class = "col"><button type="submit" style="width:40%" ion-button color="green" (click)="AddClass()">Save</button></div>
+  </div>
+
+    <div padding align ="center"> <button  (click)="AddClass()" block=true>
+    	<img src="assets/imgs/save.png">
+    </button></div>
+</form>
+
+
+
+
+</ion-content>

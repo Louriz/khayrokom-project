@@ -1,0 +1,95 @@
+<!--
+  Generated template for the AddUserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add User</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<!--
+  la fonction pour le retour (goback) est à définir par vous ;)
+-->
+<div padding align ="left"> <button  (click)="goBack()" clear=true >
+    	<img style="width:20% ; height:2% " src="assets/imgs/goback2.png">
+    </button></div>
+
+
+<div padding align="center"> <img src="assets/imgs/logo5ayrokem.png"/> </div>
+  <form>
+  <div class = "row" padding-top>
+    <ion-item>
+      <ion-input placeholder="Student name" type="text" name="StudentName" [(ngModel)]="StudentName"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class = "row" padding-top>
+		<ion-item>
+	  	<ion-label>Gender</ion-label>
+	  		<ion-select [(ngModel)]="Gender" name="Gender">
+	    		<ion-option value="f">Female</ion-option>
+	    		<ion-option value="m">Male</ion-option>
+	  		</ion-select>
+		</ion-item>
+	</div>
+
+
+
+	<div class = "row" padding-top>
+		<ion-item>
+	  	<ion-label>Status</ion-label>
+	  		<ion-select [(ngModel)]="Status" name="Status">
+	    		<ion-option value="Employee">Employee</ion-option>
+	    		<ion-option value="Patient">Patient</ion-option>
+	  		</ion-select>
+		</ion-item>
+	</div>
+
+
+<!--
+ Ces choix ci-dessous seront affichés quand le Status sera Patient 
+-->
+<div *ngIf="Status == Patient" >
+
+    <ion-item>
+      <ion-input placeholder="Room Number" type="text" name="RoomNumber"  [(ngModel)]="RoomNumber"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Level" type="text" name="Level" [(ngModel)]="Level"></ion-input>
+    </ion-item>
+</div>
+
+
+
+  
+
+<!--
+  Les deux buttons suivant font la même choses, mais nous préférons garder celui avec l'icon. Autre chose voir le type='submit' est ce que c'est indispensable ou non ? 
+-->
+
+
+  <div class = "row">
+    <div align="center" class = "col"><button type="submit" style="width:40%" ion-button color="green" (click)="AddInstitute()">Save</button></div>
+  </div>
+
+    <div padding align ="center"> <button  (click)="AddInstitute()" block=true>
+    	<img src="assets/imgs/save.png">
+    </button></div>
+</form>
+
+
+
+
+
+
+
+</ion-content>

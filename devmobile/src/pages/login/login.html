@@ -1,0 +1,59 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <img class="center" src="assets/imgs/logo5ayrokem.png"/>
+
+  <ion-list>
+    <div class = "row">
+
+      <div class = "col">
+        <h3 style="color: slategrey"> <strong> <i> Log in </i></strong></h3>
+      </div>
+
+      <div class = "col">
+        <h6 (click)="goToForget()" style="color: slategrey;text-decoration: underline"> <strong> <i>Forgot password ?</i></strong></h6>
+      </div>
+    </div>
+
+<form>
+    <div class = "row">
+      <ion-item>
+        <ion-input placeholder="Username" name="UserName" type="text" [(ngModel)]="UserName" ></ion-input>
+      </ion-item>
+    </div>
+    <div class = "row" padding-top>
+      <ion-item>
+        <ion-input placeholder="•••••" name="Password" type="password" [(ngModel)]="Password"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class = "row">
+      <div align="center" class = "col" (click)="Check()"><button  style="width:60%" ion-button color="gold">Login</button></div>
+
+    </div>
+</form>
+    <div class = "row">
+      <div align="center" class="col">New in DroneTracker ?</div>
+    </div>
+    <div class = "row">
+      <div align="center" class = "col"><button (click)="goToRegister()"  style="width:60%" ion-button color="gris">Create a new account</button></div>
+    </div>
+    <div class = "row">
+      <div align="center" class="col">    By logging in, you agree to our terms and conditions set forth in the «Legal Information Section» and our «Privacy Notice».
+      </div>
+    </div>
+  </ion-list>
+</ion-content>
